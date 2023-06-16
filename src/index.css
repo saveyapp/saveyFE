@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Anek Gurmukhi", sans-serif;
+}
+@layer base {
+  li {
+    @apply px-4;
+  }
+  .active {
+    color: #add565 !important;
+  }
+  /* .loader{ */
+  /* width: 100%;
+    height: 100vh;
+    object-fit: cover; */
+
+  /* align-items: center;
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; */
+  /* } */
+}
