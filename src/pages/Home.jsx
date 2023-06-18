@@ -47,9 +47,9 @@ const Home = () => {
       <Navbar />
       <section>
         <div className="flex flex-col gap-4 text-center pt-40 md:pt-52">
-          <h1 className="px-2 sm:px-16 text-[26px] leading-[31px] lg:text-[56px] lg:leading-[64px] font-semibold text-center max-w-[810px] mx-auto lg:px-0">
+          {/* <h1 className="px-2 sm:px-16 text-[26px] leading-[31px] lg:text-[56px] lg:leading-[64px] font-semibold text-center max-w-[810px] mx-auto lg:px-0">
             Stay accountable while attaining financial freedom
-          </h1>
+          </h1> */}
           <p className="px-[0.5rem] text-[14px] max-w-[780px] mx-auto text-center leading-[17px] md:max-w-[684px] lg:px-0 lg:text-[22px] lg:leading-[26px]">
             Savey is designed to help families and individuals build a financial
             freedom through
