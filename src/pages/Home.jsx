@@ -9,10 +9,9 @@ import tiltup from "../assets/tiltUp.png";
 import tiltdown from "../assets/tiltDown.png";
 import secondTiltDown from "../assets/secondTiltDown.png";
 import { comingSoon, flexedData } from "../constants/data";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { transition } from "@chakra-ui/react";
 
 const Home = () => {
   const texts = [
@@ -40,9 +39,11 @@ const Home = () => {
       setColor(colors[randomIndex]);
     }, 1000);
     return () => clearInterval(interval);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <motion.div exit={{ x: "-100vw" }} transition={{ease: "easeInOut"}}>
+    <motion.div exit={{ x: "-100vw" }} transition={{ ease: "easeInOut" }}>
       <Navbar />
       <section>
         <div className="flex flex-col gap-4 text-center pt-40 md:pt-52">
