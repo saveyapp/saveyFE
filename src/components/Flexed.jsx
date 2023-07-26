@@ -21,15 +21,16 @@ const Flexed = (props) => {
         </Link>
       </div>
       <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{once:false, amount: 0}}
-      transition={{ delay: 0.5, duration:0.5}}
-       variants={{
-       hidden: {opacity:0 , x:-50},
-       visible: {opacity:1, x:0},
-       }}
-       className="w-full flex justify-center">
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className="w-full flex justify-center"
+      >
         <img
           src={props.image}
           alt="/"
