@@ -12,7 +12,9 @@ const Newsletter = () => {
         "Stay up-to-date with our latest news and insights - subscribe to our
         newsletter today!”
       </p>
-
+      {/* <div>
+        <iframe src="https://getsavey.substack.com/embed"></iframe>
+      </div> */}
       <form
         onSubmit={handleSubmit}
         className="bg-white rounded-[10px] w-full md:max-w-[651px] h-[66px]  mx-auto px-2 sm:px-4 gap-4 flex justify-between items-center"
