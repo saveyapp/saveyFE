@@ -33,14 +33,14 @@ const Coming = () => {
               >
                 Go back home
               </Link>
-              <Link>
+              <Link to="/waitlist">
                 <img
                   src={appstore}
                   alt="appstore"
                   className="h-[43px] w-[142px] lg:h-[50px] lg:w-[180px] hover:scale-105 ease-in duration-500 shadow-gray-400"
                 />
               </Link>
-              <Link>
+              <Link to="/waitlist">
                 <img
                   src={googleplay}
                   alt="googleplay"

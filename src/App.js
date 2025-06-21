@@ -10,6 +10,7 @@ import Spend from "./pages/Spend";
 import Coming from "./pages/Coming";
 import preloader from "./assets/desktopPreloader.gif";
 import NotFound from "./pages/NotFound";
+import Waitlist from "./pages/Waitlist";
 function App() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -48,6 +49,7 @@ function App() {
               <Route path="/save" element={<Save />} />
               <Route path="/spend" element={<Spend />} />
               <Route path="/coming" element={<Coming />} />
+              <Route path="/waitlist" element={<Waitlist />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
