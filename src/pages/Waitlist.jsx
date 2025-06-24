@@ -52,6 +52,7 @@ const Waitlist = () => {
           </button>
         </form>
       </div>
+      {/* Testing waitlist */}
     </section>
   );
 };
