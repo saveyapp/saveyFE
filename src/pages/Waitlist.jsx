@@ -19,13 +19,11 @@ const Waitlist = () => {
       [e.target.name]: e.target.value,
     }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const res = await axios.post(
-        "http://localhost:7000/api/v1/waitlist/join",
+        `${process.env.REACT_APP_API_URL}/waitlist/join`,
         formData,
         {
           headers: {
@@ -33,8 +31,7 @@ const Waitlist = () => {
           },
         }
       );
-
-      toast.success("You've been added to the waitlist!");
+      toast.success(res.data.message || "Successfully added to waitlist");
       setFormData({ fullname: "", email: "", phone: "" });
       navigate("/");
     } catch (err) {
