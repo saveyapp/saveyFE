@@ -42,7 +42,7 @@ const Waitlist = () => {
     }
   };
   return (
-    <section className="bg-[#fffaf0] md:px-28 px-5 py-7">
+    <section className="bg-[#d2ae67] md:px-28 px-5 py-7">
       <div className="flex justify-center items-center gap-1 text-[#222] text-2xl font-bold">
         <IoIosCheckbox size={30} className="text-green-600 opacity-[0.6]" />
         Savey
@@ -102,6 +102,7 @@ const Waitlist = () => {
         </form>
       </div>
     </section>
+    // Waitlist improvement
   );
 };
 
