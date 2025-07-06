@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a155b3fa.css",
+    "main.js": "/static/js/main.ddeebd19.js",
+    "static/media/gradient.svg": "/static/media/gradient.fd3c6292b08885b5f92c.svg",
+    "static/media/spendin.png": "/static/media/spendin.f1c0c1f6bf5538d4e826.png",
+    "static/media/cominglater.png": "/static/media/cominglater.9bb396bd845ce00ce153.png",
+    "static/media/lady.png": "/static/media/lady.85d16b702b7eb1eaba28.png",
+    "static/media/saveImage.png": "/static/media/saveImage.cd405f789873ef215b1c.png",
+    "static/media/saveyFinance.png": "/static/media/saveyFinance.5f09ae1728183ebc8d77.png",
+    "static/media/aboutfirst.png": "/static/media/aboutfirst.50cfa93314ab8f670247.png",
+    "static/media/triplephone.png": "/static/media/triplephone.e96eef0724876e361a23.png",
+    "static/media/aboutsec.png": "/static/media/aboutsec.04412ac08a22734c4ddf.png",
+    "static/media/loan.png": "/static/media/loan.f26ac2fda73767d9cd5f.png",
+    "static/media/insure.png": "/static/media/insure.0e6109971dee9446cfbd.png",
+    "static/media/saveTiltUp.png": "/static/media/saveTiltUp.ae9bf0ab4e8ceabf4782.png",
+    "static/media/spend2.png": "/static/media/spend2.defb23e3079331619a1e.png",
+    "static/media/invest.png": "/static/media/invest.8030a5ef3852ed87cc77.png",
+    "static/media/faqGradient.png": "/static/media/faqGradient.7c0b75fd941384ab2a9b.png",
+    "static/media/404.png": "/static/media/404.20e632cbd99ab7fc1522.png",
+    "static/media/templateFooterBg.png": "/static/media/templateFooterBg.8ec55e63e00c8a85450d.png",
+    "static/media/desktopPreloader.gif": "/static/media/desktopPreloader.a271d4faa43bdb6b0eb4.gif",
+    "static/media/spend1.png": "/static/media/spend1.e6340ba3e8c0391d190f.png",
+    "static/media/budget.png": "/static/media/budget.9c15a7d22b15ab17f5e0.png",
+    "static/media/tiltUp.png": "/static/media/tiltUp.2099b3a27f557cbf82d2.png",
+    "static/media/secondTiltDown.png": "/static/media/secondTiltDown.78cdbe3db0336bf45af7.png",
+    "static/media/tiltDown.png": "/static/media/tiltDown.62c12ae14c61fa06cc7f.png",
+    "static/media/spend3.png": "/static/media/spend3.7ffa1f502a9a9772a49b.png",
+    "static/media/saveGraph.png": "/static/media/saveGraph.2a62d70e1c66bcd2536c.png",
+    "static/media/savey.svg": "/static/media/savey.ac513958c1efa7a90af13d609e13962f.svg",
+    "index.html": "/index.html",
+    "static/media/back.svg": "/static/media/back.962a481163839f88e1b483098a3e39ec.svg",
+    "main.a155b3fa.css.map": "/static/css/main.a155b3fa.css.map",
+    "main.ddeebd19.js.map": "/static/js/main.ddeebd19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a155b3fa.css",
+    "static/js/main.ddeebd19.js"
+  ]
+}
