@@ -28,9 +28,11 @@ const Waitlist = () => {
         {
           headers: {
             "Content-Type": "application/json",
+            // "Access-Control-Allow-Origin": "*",
           },
         }
       );
+      console.log(res)
       toast.success(res.data.message || "Successfully added to waitlist");
       setFormData({ fullname: "", email: "", phone: "" });
       navigate("/");
