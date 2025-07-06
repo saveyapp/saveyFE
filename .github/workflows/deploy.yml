@@ -19,7 +19,7 @@ jobs:
 
       - name: 👨🏼‍💻 Build project
         run: |
-          yarn install --frozen-lockfile
+          yarn install
           yarn build
 
       - name: Transfer files to remote 📂
@@ -31,9 +31,4 @@ jobs:
           protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
           local-dir: ${{ secrets.GIT_CPANEL_DEPLOY_DIR }}
           server-dir: /getsavey.com/frontend/           
-          delete: true
-          exclude: |
-            **/.git*
-            **/node_modules/**
-            **/*.log
-            **/README.md
+          
