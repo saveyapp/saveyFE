@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: "16"
 
-      - name: Build Project 👨🏼‍💻
+      - name: 👨🏼‍💻 Build project
         run: |
-          yarn install
+          yarn install --frozen-lockfile
           yarn build
 
       - name: Transfer files to remote 📂
@@ -30,3 +30,10 @@ jobs:
           password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
           protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
           local-dir: ${{ secrets.GIT_CPANEL_DEPLOY_DIR }}
+          server-dir: /getsavey.com/frontend/           
+          delete: true
+          exclude: |
+            **/.git*
+            **/node_modules/**
+            **/*.log
+            **/README.md
