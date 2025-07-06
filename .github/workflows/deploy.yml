@@ -22,6 +22,9 @@ jobs:
           yarn install
           yarn build
 
+      - name: 🧪 Verify build directory exists
+        run: ls -la ./build/
+
       - name: Transfer files to remote 📂
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
