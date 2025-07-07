@@ -14,11 +14,6 @@ import Waitlist from "./pages/Waitlist";
 function App() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  // window.onload = () => {
-  //   setLoading(false);
-  // };
-  // }, [loading]);
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);

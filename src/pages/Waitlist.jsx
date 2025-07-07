@@ -1,110 +1,123 @@
-import { IoIosCheckbox } from "react-icons/io";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import logo from "../assets/savey.svg";
+import waitlist from "../assets/aboutfirst.png";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import Modal from "../components/Modal";
 
 const Waitlist = () => {
-  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
-    fullname: "",
+    firstname: "",
+    lastname: "",
     email: "",
-    phone: "",
   });
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const { firstname, lastname, email } = formData;
+    const fullname = `${firstname} ${lastname}`;
     try {
-      const res = await axios.post(
+      await axios.post(
         `${process.env.REACT_APP_API_URL}/waitlist/join`,
-        formData,
+        { fullname, email },
         {
           headers: {
             "Content-Type": "application/json",
-            // "Access-Control-Allow-Origin": "*",
           },
         }
       );
-      console.log(res)
-      toast.success(res.data.message || "Successfully added to waitlist");
-      setFormData({ fullname: "", email: "", phone: "" });
-      navigate("/");
+
+      setIsOpen(true);
+      setFormData({ firstname: "", lastname: "", email: "" });
     } catch (err) {
       const message =
         err.response?.data?.message || "Failed to add to waitlist";
       toast.error(message);
       console.log(err);
+    } finally {
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+      });
     }
   };
   return (
-    <section className="bg-[#d2ae67] md:px-28 px-5 py-7">
-      <div className="flex justify-center items-center gap-1 text-[#222] text-2xl font-bold">
-        <IoIosCheckbox size={30} className="text-green-600 opacity-[0.6]" />
-        Savey
-      </div>
-      <h1 className="text-center text-3xl font-bold text-[#222] py-3">
-        Smarter Budgeting <br /> Starts Here
-      </h1>
-      <p className="text-center">
-        Savey helps you plan better, track your goals, and
-        <br className="hidden sm:block" /> spend wisely - whether you're a
-        student, professional <br className="hidden sm:block" /> or business
-        owner
-      </p>
-      <div className="flex justify-center">
-        <form
-          onSubmit={handleSubmit}
-          className="bg-white px-8 py-6 my-6 flex flex-col rounded-xl w-[317px] md:w-[430px]"
-        >
-          <h2 className=" text-lg font-semibold text-center text-[#222]">
-            Join the Waitlist
-          </h2>
-          <p className="text-base text-center text-[#353535] opacity-[0.6] py-3">
-            Be the first to access Savey and <br /> start saving smarter
-          </p>
-          <input
-            type="text"
-            className="text-base border rounded-md p-3 outline-none text-[#222] mb-3"
-            placeholder="Full Name"
-            name="fullname"
-            value={formData.fullname}
-            onChange={handleChange}
-            required
-          />
-          <input
-            className="text-base border rounded-md p-3 outline-none text-[#222] mb-3"
-            type="text"
-            placeholder="Email Address"
-            required
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <input
-            type="number"
-            name="phone"
-            placeholder="Phone Number (optional)"
-            value={formData.phone}
-            onChange={handleChange}
-            className="text-base border rounded-md p-3 outline-none text-[#222] mb-3"
-          />
-          <button
-            type="submit"
-            className="bg-[#ff6347] text-white text-base font-semibold rounded-md py-3"
-          >
-            Join Waitlist
-          </button>
-        </form>
-      </div>
-    </section>
-    // Waitlist improvement
+    <>
+      <section className="py-12 text-[#231f20]">
+        <div className="container">
+          <Link to="/">
+            <img src={logo} alt="logo" className="" />
+          </Link>
+          <div className="grid lg:grid-cols-[55%_45%] items-center gap-7 mt-12">
+            <div>
+              <h1 className="text-[3rem] leading-[50px] lg:text-[4rem] lg:leading-[64px] font-bold ">
+                Smarter Budgeting Starts{" "}
+                <span className="text-[#1C8540]">Here</span>
+              </h1>
+              <p className="pb-3 pt- text-lg">
+                Savey helps you plan better, track your goals, and spend wisely
+                - whether
+                <br className="hidden sm:block" /> you're a student,
+                professional or business owner
+              </p>
+              <form onSubmit={handleSubmit} className="flex flex-col gap-2 ">
+                <div className="flex flex-col sm:flex-row gap-2 lg:items-center">
+                  <input
+                    className="w-full border rounded-md p-3 outline-none text-[#222] mb-3"
+                    type="text"
+                    placeholder="Firstname"
+                    required
+                    name="firstname"
+                    value={formData.firstname}
+                    onChange={handleChange}
+                  />
+                  <input
+                    className="w-full text-base border rounded-md p-3 outline-none text-[#222] mb-3"
+                    type="text"
+                    placeholder="Lastname"
+                    required
+                    name="lastname"
+                    value={formData.lastname}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="flex flex-col lg:flex-row gap-2 lg:items-center">
+                  <input
+                    className="w-full text-base border rounded-md p-3 outline-none text-[#222] mb-3 lg:w-[400px]"
+                    type="text"
+                    placeholder="mail@johndoe.com"
+                    required
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                  <button
+                    type="submit"
+                    className="w-full sm:w-1/2 lg:w-auto bg-[#1C8540] text-white text-base font-semibold rounded-md p-3 hover:bg-[#ADD565] ease-in duration-200"
+                  >
+                    Join Waitlist
+                  </button>
+                </div>
+              </form>
+            </div>
+            <img src={waitlist} alt="networking" className="hidden lg:block" />
+          </div>
+        </div>
+      </section>
+      {isOpen && <Modal />}
+    </>
   );
 };
 
