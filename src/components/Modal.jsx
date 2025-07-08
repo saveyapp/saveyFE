@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import demo from "../assets/congratulation.png";
 import { IoIosClose } from "react-icons/io";
-import { PeopleUrl } from "../constants/data";
+import success from "../assets/success.png";
+import people from "../assets/people.png";
 const Modal = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Modal = () => {
           </Link>
           <div>
             <div className="flex justify-center my-3">
-              <img src={demo} alt="Success" className="w-[130px]" />
+              <img src={success} alt="Success" className="w-[80px]" />
             </div>
             <h2 className=" text-3xl font-bold md:text-4xl">You have been</h2>
             <h2 className="  text-3xl font-bold md:text-4xl">
@@ -22,18 +22,11 @@ const Modal = () => {
               Thank you for joining, you'll be the first{" "}
               <br className="hidden md:block" /> to know when we are ready!
             </p>
-            <span className="flex -space-x-4 overflow-hidden justify-center">
-              {PeopleUrl.map((url) => (
-                <img
-                  className="h-10 w-10 rounded-full inline-block"
-                  src={url}
-                  key={url}
-                  alt="person"
-                  width={52}
-                  height={52}
-                />
-              ))}
-            </span>
+            <img
+              src={people}
+              alt="people"
+              className="w-[150px] mx-auto block"
+            />
             <div>
               <p className="text-base">
                 You are not alone,{" "}

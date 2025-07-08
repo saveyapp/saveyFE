@@ -6,10 +6,6 @@ import payment from "../assets/payment.png";
 import finance from "../assets/finance.png";
 import greenbox from "../assets/greenbox.png";
 import cardimg from "../assets/cardinm.png";
-import first from "../assets/person-1.png";
-import second from "../assets/person-2.png";
-import third from "../assets/person-3.png";
-import forth from "../assets/person-4.png";
 
 export const comingSoon = [
   {
@@ -280,4 +276,4 @@ export const budgetGoals = [
     goal: "We leverage on data analytics and artificial intelligence to provide customized recommendations and advice on financial freedom based on your interest.",
   },
 ];
-export const PeopleUrl = [first, second, third, forth];
+

@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import waitlist from "../assets/waitlist.png";
 import { useState } from "react";
 import Modal from "../components/Modal";
+import { Link } from "react-router-dom";
+import logo from "../assets/savey.svg";
 const Waitlist = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -54,7 +56,10 @@ const Waitlist = () => {
     <>
       <section className="py-12 text-[#231f20]">
         <div className="container">
-          <div className="grid lg:grid-cols-[45%_55%] items-start gap-16 lg:gap-7 mt-12">
+          <Link to="/">
+          <img src={logo} alt="logo" />
+          </Link>
+          <div className="grid lg:grid-cols-[45%_55%] items-start gap-16 lg:gap-7 mt-14">
             <div>
               <h1 className="whitespace-nowrap text-[3rem] leading-[50px] lg:text-[4rem] lg:leading-[64px] font-bold ">
                 Revolutionize <br /> your {""}
@@ -85,9 +90,9 @@ const Waitlist = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="flex flex-col lg:flex-row gap-2 lg:items-center">
+                <div className="flex flex-col sm:flex-row gap-2 lg:items-center">
                   <input
-                    className="bg-[#E7E7E7] w-full text-base border rounded-md p-3 outline-none text-[#222] lg:w-[400px]"
+                    className="bg-[#E7E7E7] w-full text-base border rounded-md p-3 outline-none text-[#222]"
                     type="text"
                     placeholder="mail@johndoe.com"
                     required
@@ -97,7 +102,7 @@ const Waitlist = () => {
                   />
                   <button
                     type="submit"
-                    className="w-full sm:w-1/2 lg:w-auto bg-[#52AA2A] text-white text-xl  rounded-md px-4 py-3 hover:bg-[#ADD565] ease-in duration-200 whitespace-nowrap"
+                    className="w-full bg-[#52AA2A] text-white text-xl  rounded-md px-4 py-3 hover:bg-[#ADD565] ease-in duration-200 whitespace-nowrap"
                   >
                     <span>Join Waitlist</span>
                   </button>
