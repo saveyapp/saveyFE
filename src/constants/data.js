@@ -6,22 +6,29 @@ import payment from "../assets/payment.png";
 import finance from "../assets/finance.png";
 import greenbox from "../assets/greenbox.png";
 import cardimg from "../assets/cardinm.png";
+import first from "../assets/person-1.png";
+import second from "../assets/person-2.png";
+import third from "../assets/person-3.png";
+import forth from "../assets/person-4.png";
 
 export const comingSoon = [
   {
     heading: "Investing",
-    description: "Invest into both local and global investment scheme to grow your money",
+    description:
+      "Invest into both local and global investment scheme to grow your money",
     img: invest,
   },
   {
     img: loan,
     heading: "Loan",
-    description: "Get emergency loans to cover up for your savings and spendings",
+    description:
+      "Get emergency loans to cover up for your savings and spendings",
   },
   {
     img: insure,
     heading: "Insurance",
-    description: "Secure all that you have including your health and with our personal insurance scheme",
+    description:
+      "Secure all that you have including your health and with our personal insurance scheme",
   },
 ];
 
@@ -60,18 +67,15 @@ export const flexedData = [
   },
   {
     firstfixedData:
-
-      "Savey combines AI and financial best practices to compute how much should be accessible in Spending at any given time after budgeting. This is what remains after saving, paying off obligations, and planning for the future."
-
+      "Savey combines AI and financial best practices to compute how much should be accessible in Spending at any given time after budgeting. This is what remains after saving, paying off obligations, and planning for the future.",
   },
   {
-    firstfixedData: "Use our built-in payment infrastructure, available to you at all times, to pay for assigned things using your Savey wallet." ,
+    firstfixedData:
+      "Use our built-in payment infrastructure, available to you at all times, to pay for assigned things using your Savey wallet.",
 
-    secondfixedData: " You have access to a registered virtual wallet that will be used for your Top-up and spending purposes, preventing you from using funds that were set aside for bills and other expenses."
-    
-    
-    
-  }
+    secondfixedData:
+      " You have access to a registered virtual wallet that will be used for your Top-up and spending purposes, preventing you from using funds that were set aside for bills and other expenses.",
+  },
 ];
 
 export const savingBenefits = [
@@ -276,3 +280,4 @@ export const budgetGoals = [
     goal: "We leverage on data analytics and artificial intelligence to provide customized recommendations and advice on financial freedom based on your interest.",
   },
 ];
+export const PeopleUrl = [first, second, third, forth];
