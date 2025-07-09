@@ -57,17 +57,17 @@ const Waitlist = () => {
       <section className="py-12 text-[#231f20]">
         <div className="container">
           <Link to="/">
-          <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" />
           </Link>
           <div className="grid lg:grid-cols-[45%_55%] items-start gap-16 lg:gap-7 mt-14">
             <div>
-              <h1 className="whitespace-nowrap text-[3rem] leading-[50px] lg:text-[4rem] lg:leading-[64px] font-bold ">
-                Revolutionize <br /> your {""}
-                <span className="text-[#52AA2A]">finances</span>
+              <h1 className="sm:whitespace-nowrap text-[3rem] leading-[50px] font-bold ">
+                Smarter Budgeting <br />
+                <span className="text-[#52AA2A]">Starts Here</span>
               </h1>
-              <p className="pb-3 text-xl sm:text-2xl text-center sm:text-left">
-                Chat, Split and Pay bills seamlessly{" "}
-                <br className="hidden sm:block" /> with Savey
+              <p className="pt-2 pb-4 text-xl sm:text-2x">
+                Savey helps you plan better, track your goals, and spend wisely
+                - whether you're a student, professional or business owner
               </p>
               <form onSubmit={handleSubmit} className="flex flex-col gap-2 ">
                 <div className="flex flex-col sm:flex-row gap-2 lg:items-center">
