@@ -64,12 +64,20 @@ const Footer = () => {
             <Link to="./">Careers</Link>
           </p>
         </div>
-        <div className="pl-[10px]">
-          <p className="text-lg font-bold text-[#353535]">Legal</p>
-          <p className="pt-4">Terms & conditions</p>
-          <p className="pt-4">Privacy Policy</p>
-          <p className="pt-4 pb-3">Non-disclosure Agreement</p>
-        </div>
+        <ul className="pl-[10px]">
+          <li className="text-lg font-bold text-[#353535]">Legal</li>
+          <li className="pt-4">
+            <Link to="/legal">Terms & conditions</Link>
+          </li>
+          <li className="pt-4">
+            <Link to="/legal">Privacy Policy</Link>
+          </li>
+          <li className="pt-4">
+            <Link to="/legal" className="pb-3">
+              Non-disclosure Agreement
+            </Link>
+          </li>
+        </ul>
         <div className="pl-[10px]">
           <p className="text-lg font-bold text-[#353535]">New Release</p>
           <p className="pt-4">

@@ -11,6 +11,7 @@ import Coming from "./pages/Coming";
 import preloader from "./assets/desktopPreloader.gif";
 import NotFound from "./pages/NotFound";
 import Waitlist from "./pages/Waitlist";
+import LegalDocuments from "./pages/Legal";
 function App() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -43,6 +44,7 @@ function App() {
               <Route path="/faq" element={<Faq />} />
               <Route path="/save" element={<Save />} />
               <Route path="/spend" element={<Spend />} />
+              <Route path="/legal" element={<LegalDocuments />} />
               <Route path="/coming" element={<Coming />} />
               <Route path="/waitlist" element={<Waitlist />} />
               <Route path="*" element={<NotFound />} />
