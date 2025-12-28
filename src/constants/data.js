@@ -204,9 +204,9 @@ export const footerData = [
     content: "Terms and Condition",
     content1: "Privacy Policy",
     content2: "Non-disclosure Agreement",
-    link1: "./",
-    link2: "./",
-    link3: "./",
+    link1: "/legal",
+    link2: "/legal",
+    link3: "/legal",
   },
   {
     key: 3,

@@ -94,32 +94,27 @@ const Footer = () => {
 
       <div className="hidden md:flex flex-col">
         <p className="text-center text-lg pt-8">
-          Copyright &copy; 2023 Savey Technologies. All Rights Reserved.
+          Copyright &copy; 2025 Cre8ng Digitals Ltd. All Rights Reserved.
         </p>
 
         <p className=" pt-12 pb-7 md:pb-36 px-5 md:px-28">
-          Savey is a fintech company that provides saving, budgeting, and
-          spending tools to help individuals and businesses manage their
-          finances. All information, content, and materials provided on our
-          website and through our services are protected by copyright and other
-          applicable laws. Any use of our content or materials, including but
-          not limited to reproduction, distribution, modification, or
-          transmission, without prior written consent from Savey is strictly
-          prohibited.
+          Savey is a budgeting and financial management product created by
+          Cre8ng Digitals. All information, content, designs, and materials on
+          our website and platform are protected by copyright and applicable
+          intellectual property laws. Unauthorized reproduction, modification,
+          distribution, or transmission of our content is strictly prohibited.
           <br />
           <br />
-          All trademarks, service marks, logos, and trade names displayed on our
-          website or in connection with our services are the property of Savey
-          or their respective owners. You may not use any of these marks without
-          the prior written consent of Savey or the respective owner. At Savey,
-          we respect the intellectual property rights of others and expect our
-          users to do the same. If you believe that any content on our website
-          or in connection with our services infringes your copyright or other
-          intellectual property rights, please contact us immediately at
+          All trademarks, service marks, logos, and brand visuals displayed on
+          our platform are the property of Cre8ng Digitals or their respective
+          owners. You may not use any of these assets without prior written
+          permission. We respect the intellectual property rights of others and
+          expect our users to do the same. If you believe any material on our
+          platform infringes your rights, please contact us at
           support@getsavey.com.
           <br />
           <br />
-          Thank you for choosing Savey for your financial management needs.
+          Thank you for choosing Savey to manage your financial life.
         </p>
       </div>
 
@@ -144,7 +139,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex gap-4 py-4 justify-center">
-          <Link to="./">
+          <Link to="/">
             <img className="pr-4" src={Facebook} alt="Facebook Logo" />
           </Link>
           <Link target="_blank" to="https://www.linkedin.com/company/getsavey/">
@@ -163,28 +158,23 @@ const Footer = () => {
         </p>
 
         <p className=" pt-[35px] pb-[18px] px-5 text-[10px] leading-[13.64px]">
-          Savey is a fintech company that provides saving, budgeting, and
-          spending tools to help individuals and businesses manage their
-          finances. All information, content, and materials provided on our
-          website and through our services are protected by copyright and other
-          applicable laws. Any use of our content or materials, including but
-          not limited to reproduction, distribution, modification, or
-          transmission, without prior written consent from Savey is strictly
-          prohibited.
+          Savey is a budgeting and financial management product created by
+          Cre8ng Digitals. All information, content, designs, and materials on
+          our website and platform are protected by copyright and applicable
+          intellectual property laws. Unauthorized reproduction, modification,
+          distribution, or transmission of our content is strictly prohibited.
           <br />
           <br />
-          All trademarks, service marks, logos, and trade names displayed on our
-          website or in connection with our services are the property of Savey
-          or their respective owners. You may not use any of these marks without
-          the prior written consent of Savey or the respective owner. At Savey,
-          we respect the intellectual property rights of others and expect our
-          users to do the same. If you believe that any content on our website
-          or in connection with our services infringes your copyright or other
-          intellectual property rights, please contact us immediately at
+          All trademarks, service marks, logos, and brand visuals displayed on
+          our platform are the property of Cre8ng Digitals or their respective
+          owners. You may not use any of these assets without prior written
+          permission. We respect the intellectual property rights of others and
+          expect our users to do the same. If you believe any material on our
+          platform infringes your rights, please contact us at
           support@getsavey.com.
           <br />
           <br />
-          Thank you for choosing Savey for your financial management needs.
+          Thank you for choosing Savey to manage your financial life.
         </p>
       </section>
     </div>

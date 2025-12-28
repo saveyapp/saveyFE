@@ -58,14 +58,14 @@ const Home = () => {
             </span>
           </p>
           <div className="px-5 md:px-28 flex gap-4 justify-center lg:mt-6">
-            <Link to="/waitlist">
+            <Link to="https://app.savey.africa/">
               <img
                 src={appstore}
                 alt="appstore"
                 className="w-[120px] lg:w-[180px] hover:scale-105 ease-in duration-500 shadow-gray-400"
               />
             </Link>
-            <Link to="/waitlist">
+            <Link to="https://app.savey.africa/">
               <img
                 src={googleplay}
                 alt="playstore"
