@@ -293,3 +293,27 @@ export const budgetGoals = [
     goal: "We leverage on data analytics and artificial intelligence to provide customized recommendations and advice on financial freedom based on your interest.",
   },
 ];
+
+
+export const coloredScrollBar = `.my-container {
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #4f46e5 #f1f1f1;
+}
+
+/* Chrome, Edge, Safari */
+.my-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.my-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.my-container::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 10px;
+}
+`;
