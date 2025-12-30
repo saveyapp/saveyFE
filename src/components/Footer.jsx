@@ -11,9 +11,11 @@ import Twitter from "../assets/twitter.png";
 const Footer = () => {
   return (
     <div className="md:pt-14 pt-6">
-      <div className="md:flex gap-4 md:px-28 px-5 justify-between hidden">
+      <div className="lg:flex gap-4 container justify-between hidden">
         <div>
+          <Link to="/">
           <img src={Savey} alt="Savey Logo" />
+          </Link>
           <p className="pt-6">
             Budgeting made simple, <br /> saving made easy
           </p>
@@ -92,12 +94,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex flex-col">
+      <div className="container hidden lg:flex flex-col">
         <p className="text-center text-lg pt-8">
           Copyright &copy; 2025 Cre8ng Digitals Ltd. All Rights Reserved.
         </p>
 
-        <p className=" pt-12 pb-7 md:pb-36 px-5 md:px-28">
+        <p className="pt-12 pb-7 md:pb-36">
           Savey is a budgeting and financial management product created by
           Cre8ng Digitals. All information, content, designs, and materials on
           our website and platform are protected by copyright and applicable
@@ -119,8 +121,8 @@ const Footer = () => {
       </div>
 
       {/* FOOTER MOBILE VIEW */}
-      <section className="md:hidden">
-        <div className="px-5">
+      <section className="container lg:hidden">
+        <div>
           {footerData.map((item) => (
             <FooterAccordion
               head={item.head}

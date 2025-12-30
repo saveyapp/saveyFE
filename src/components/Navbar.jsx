@@ -13,7 +13,7 @@ import insure from "../assets/insuranceIcon.png";
 import aboutIcon from "../assets/aboutIcon.png";
 import faqIcon from "../assets/faqIcon.png";
 import contactIcon from "../assets/contactIcon.png";
-const Navbar = () => {
+const  Navbar = () => {
   const [nav, setNav] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <header className={`w-full fixed z-[1000] bg-white shadow-myshadow`}>
-      <div className="flex md:px-28 px-5 py-7 items-center justify-between">
+      <div className="flex py-7 items-center justify-between container">
         <Link to="/">
           <img src={Savey} alt="Savey Logo" />
         </Link>
