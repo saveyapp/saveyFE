@@ -7,6 +7,23 @@ import finance from "../assets/finance.png";
 import greenbox from "../assets/greenbox.png";
 import cardimg from "../assets/cardinm.png";
 
+export const texts = [
+  "Budgeting",
+  "Saving",
+  "Spending",
+  "Loan",
+  "Investment",
+  "Insurance",
+];
+export const colors = [
+  "#1C8540",
+  "#ADD565",
+  "#FF3C3C",
+  "#C7B7DD",
+  "#1F1426",
+  "#FFE000",
+];
+
 export const comingSoon = [
   {
     heading: "Investing",
@@ -204,9 +221,9 @@ export const footerData = [
     content: "Terms and Condition",
     content1: "Privacy Policy",
     content2: "Non-disclosure Agreement",
-    link1: "./",
-    link2: "./",
-    link3: "./",
+    link1: "/legal",
+    link2: "/legal",
+    link3: "/legal",
   },
   {
     key: 3,
@@ -276,4 +293,3 @@ export const budgetGoals = [
     goal: "We leverage on data analytics and artificial intelligence to provide customized recommendations and advice on financial freedom based on your interest.",
   },
 ];
-
