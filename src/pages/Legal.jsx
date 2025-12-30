@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Search, ChevronUp, ChevronDown } from "lucide-react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function LegalDocuments() {
   const [activeTab, setActiveTab] = useState("terms");
@@ -53,7 +54,7 @@ export default function LegalDocuments() {
       <div className="min-h-screen bg-gray-50 md:px-28 px-5 py-8 sm:py-12 md:py-[80px] relative">
         <div className="mx-auto max-w-7xl">
           {/* Search Bar */}
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <div className="relative max-w-md">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
               <input
@@ -62,7 +63,7 @@ export default function LegalDocuments() {
                 className="w-full text-base rounded-lg border border-gray-200 bg-white py-2.5 pl-10 pr-4 text-gray-700 placeholder:text-gray-400 focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Main Content */}
           <div className="flex flex-col lg:flex-row gap-[60px]">
@@ -141,13 +142,9 @@ export default function LegalDocuments() {
             {/* Right Content Area - Scrollable */}
             <div className="flex-1">
               <div className="relative rounded-2xl md:rounded-[20px] border border-[#e5e5e5] bg-white shadow-lg">
-                {/* Green accent line */}
                 <div
-                  className="absolute right-0 top-0 h-full w-1 rounded-r-lg bg-gradient-to-r from-[#1c8540] to-[#8DBDFF]"
-
-                  // style="width: 0%;"
-                />
-                <div className="max-h-[600px] sm:max-h-[700px] md:max-h-[800px] overflow-y-auto scroll-smooth p-6 sm:p-8 md:p-[48px]">
+                  className={`max-h-[600px] sm:max-h-[700px] md:max-h-[800px] overflow-y-auto scroll-smooth p-6 sm:p-8 md:p-[48px] my-container`}
+                >
                   {activeTab === "terms" && <TermsContent />}
                   {activeTab === "privacy" && <PrivacyContent />}
                   {activeTab === "acceptable" && <AcceptableContent />}
@@ -157,6 +154,7 @@ export default function LegalDocuments() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
